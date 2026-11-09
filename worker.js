@@ -78,7 +78,7 @@ export default {
     }
 
     if (request.method === "GET" && url.pathname === "/health") {
-      return json({ ok: true, service: "NOVA", features: ["chat", "image", "animated-gif"] });
+      return json({ ok: true, service: "NOVA AI", features: ["chat", "image", "animated-gif"] });
     }
 
     if (url.pathname === "/video") {
@@ -116,7 +116,7 @@ export default {
 
         const result = await openaiJson("/responses", {
           model: env.CHAT_MODEL || "gpt-6-astra",
-          instructions: "You are NOVA, a helpful, clear, multilingual assistant. Reply in the user's language.",
+          instructions: "You are NOVA AI, a helpful, clear, multilingual assistant. Reply in the user's language.",
           input,
         }, env);
 

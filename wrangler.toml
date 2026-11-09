@@ -1,0 +1,9 @@
+name = "nova-ai"
+main = "worker.js"
+compatibility_date = "2026-11-09"
+workers_dev = true
+
+[vars]
+CHAT_MODEL = "gpt-6-astra"
+IMAGE_MODEL = "gpt-image-2.5-flare"
+ANIMATION_MODEL = "gpt-image-2.6-flare"
